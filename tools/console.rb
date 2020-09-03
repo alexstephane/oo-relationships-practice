@@ -39,23 +39,6 @@ trip_6=Trip.new(nyc,boris)
 binding pry
 p nyc.guests
 
-# #### Guest
-# alex = Guest.new("Alex")
-#  chris = Guest.new("Chris")
-# # peter = Guest.new("Peter")
-# # peter_smith = Guest.new("Peter Smith")
-#  alex = Guest.new("Alex")
-# # robin = Guest.new("Robin")
-# # andrew = Guest.new("Andrew")
-# ##AD TRIP
-# # peter.add_trip(seattle)
-# # peter.add_trip(la)
-# alex.add_trip(house4)
-#  alex.add_trip(house1)
-# #  house1.add_guest(robin)
-# #  house1.add_guest(andrew)
-# #  andrew.add_trip(house1)
-
 
 
 # ##trips

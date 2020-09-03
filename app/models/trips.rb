@@ -1,5 +1,5 @@
 class Trip 
-    attr_accessor :listing,:guest, :trip
+    attr_accessor :listing,:guest
         @@all=[]
     def initialize(listing,guest)
         @listing=listing
