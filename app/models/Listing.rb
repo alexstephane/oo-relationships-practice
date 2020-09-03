@@ -17,16 +17,19 @@ class Listing
 # end
 
     def guests
-    Trip.all.select do |guest|
-        guest.listing==self
-    end
-#binding pry
+        self.trips.map do|trip|
+            trip.guest
+        end
+
+
+
     end
 
     def trips
-        self.guests.map do |guest|
-            guest
-        end
+        
+        Trip.all.select do |trip|
+            trip.listing==self
+        end    
 
     end
 
@@ -36,13 +39,13 @@ class Listing
 
     def self.find_all_by_city(city)
         self.all.select do |listing|
-            listing.city.include?(city) end
+            listing.city.include?(city)
+         end
     end
 
     def self.most_popular
-
-        self.all.select do |most_p|
-            most_p.mode
+        self.all.max_by do |most_trip|
+            most_trip.trip_count
         end
     end
 end

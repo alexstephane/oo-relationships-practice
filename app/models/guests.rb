@@ -10,25 +10,37 @@ class Guest
         @@all
     end
 
+
+    def trips
+        Trip.all.select do |trip|
+            trip.guest==self
+        end
+       end
+
+
    def listings
-    Trip.all.select do |listing|
-        listing.guest==self
+    self.trips.map  do |trip|
+        trip.listing
     end
    end
 
-   def trips
-    self.listings.map do |tr|
-        tr.trip
+   def trip_count 
+    self.trips.count
+   end
+
+
+    def self.find_all_by_name(name)
+
+        self.all.find_all do |na|
+            na.name.include?(name)
+        end
+   end
+
+    def self.pro_traveller
+        self.all.select do |guest|
+            guest.trip_count > 1
+        end
     end
-   end
-
-
-   def self.find_all_by_name(name)
-
-    self.all.find_all do |na|
-        na.name.include?(name)
-   end
-   end
 end
   
 

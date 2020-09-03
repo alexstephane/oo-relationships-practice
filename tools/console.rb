@@ -22,7 +22,7 @@ alex=Guest.new("Alex")
 chris=Guest.new("Chris")
 boris=Guest.new("Boris")
 sonia=Guest.new("Sonia")
-alex=Guest.new("Alex")
+#alex=Guest.new("Alex")
 
 ##add_guest
 # nyc.add_guest(alex)
@@ -36,8 +36,18 @@ trip_4=Trip.new(nyc,chris)
 trip_5=Trip.new(nyc,sonia)
 trip_6=Trip.new(nyc,boris)
 #puts nyc.guests
-binding pry
-p nyc.guests
+#binding pry
+#p nyc.guests
+puts "trips alex went on"
+#p alex.trips
+
+#p Guest.find_all_by_name("jon")
+
+#p alex.trip_count
+
+#p Guest.pro_traveller
+p Listing.most_popular
+
 
 
 

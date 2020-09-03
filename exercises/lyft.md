@@ -37,24 +37,25 @@ Complete the following deliverables. You may choose to make additional helper me
 
 #### Driver
 
-- #name
+<!-- - #name -->
   <!-- - returns the name of the driver
-    <!-- - #rides -->
-      <!-- - returns all rides a driver has made --> -->
+    <!-- - #rides --returns all rides a driver has made --> -->
   <!-- - #passengers
     - returns all passengers a driver has had -->
   <!-- - .all
     - returns an array of all drivers -->
+
 - .mileage_cap(distance)
   - takes an argument of a distance (float) and returns all drivers who have exceeded that mileage
 
 #### Ride
 
-- #passenger
-  - returns the passenger object for that ride
-- #driver
-  - returns the driver object for that ride
-- #distance
-  - returns the distance travelled for that ride
+<!-- - #passenger
+  - returns the passenger object for that ride -->
+<!-- - #driver
+  - returns the driver object for that ride -->
+<!-- - #distance
+  - returns the distance travelled for that ride -->
+
 - .average_distance
   - should find the average distance of all rides
